@@ -1,0 +1,161 @@
+body{
+    overflow: hidden;
+}
+.container{
+    padding-left: 600px;
+    display: flex;
+    /* border: 5px solid;
+    border-color: black; */
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right: 50px;
+    word-spacing: 50px;
+    text-align: right;
+    text-decoration: none ;
+}
+.intro{
+    font-size: 25px;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-weight: normal;
+}
+.mid{
+    font-size: 55px;
+    font-weight: normal;
+    margin-left: 200px;
+    margin-top: -30px;
+}
+.and{
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: -45px;
+    font-weight: normal;
+}
+h3{
+    font-size: 30px;
+    margin-left: 80px;
+    margin-top: -30px;
+    color: #359381;
+}
+#head{
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    padding: 6px 15px;
+    margin: 0px 10px;
+}
+#head:hover , .fix{
+    color: white;
+    background-color: #359381;
+}
+.box{
+    margin: 10px;
+    text-align: center;
+    border: 5px;
+    border-color: black;
+    border-style:solid;
+    border-radius: 10px;
+    width: 100px;
+}
+.first{
+    margin-top: -40px;
+    margin-left: 200px;
+    align-items: left;
+    justify-content: left;
+    min-height: 100vh;
+    display: inline-flex;
+}
+.first .second {
+    font-size: 40px;
+    font-weight: 400px;
+}
+.first .dynamic{
+    margin-top: -3px;
+    margin-left: -15px;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.dynamic li{
+    margin-left: -10px;
+    margin-top: 0px;
+    color: #FC6D6D;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(3) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -150px;
+    }
+}
+
+.dynamic li span{
+    position: relative;
+}
+.dynamic li span::after{
+    content: "";
+    border-left: 2px solid #FC6D6D;
+    left: 0;
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    animation: typing 2s steps(19) infinite;
+    background: white;
+}
+@keyframes typing{
+    100%{
+        left: 107%;
+    }
+}
+.pic{
+    margin-left: 850px;
+    margin-top: -970px;
+    width: 400px;
+    height: 600px;
+    filter: drop-shadow( 20px 20px 250px #20b2aa);
+    z-index: -1;
+}
+#social i{
+    transition: all 0.2s;
+}
+#social:hover i{
+    font-size: 70px;
+    transform: translate(-50%,-50%);
+}
+.bx{
+    font-size: 50px;
+    color: black;
+}
+.insta{
+    margin-top: -500px;
+    margin-left: 800px;
+    width: 50px;
+}
+.twitter{
+    margin-top: -150px;
+    margin-left: 820px;
+    width: 50px;
+}
+.facebook{
+    margin-left: 840px;
+    margin-top: -140px;
+    width: 50px;
+    position: absolute;
+}
+.lin{
+    margin-top: -240px;
+    margin-left: 870px;
+    width: 50px;
+    position: absolute;
+}
+.github{
+    margin-top: -310px;
+    margin-left: 920px;
+    width: 100px;
+    position: absolute;
+}
+
